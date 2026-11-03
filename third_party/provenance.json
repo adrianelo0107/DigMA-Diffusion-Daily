@@ -1,0 +1,28 @@
+{
+  "repository": "https://github.com/microsoft/TimeCraft",
+  "commit": "9a81eeef4f8487353a4aedb0b80b8a534e765720",
+  "files": [
+    {
+      "path": "DiGA/diffusion/cont_ctrl_net.py",
+      "blob_sha": "aaa0cbec40d02e5cee50990242b94137e3e44ab4"
+    },
+    {
+      "path": "DiGA/diffusion/disc_ctrl_net.py",
+      "blob_sha": "6fe004b2b2543336d0239df71c767e44cec4ee85"
+    },
+    {
+      "path": "DiGA/diffusion/ddpm.py",
+      "blob_sha": "749f0ca220e45ea0806169368a9291ec3b1f6592"
+    }
+  ],
+  "adaptations": [
+    "Removed unused original dataset/Lightning wrappers; neural networks and diffusion equations are reused.",
+    "Exposed x0_clip, daily default 6 instead of upstream implicit 2 for standardized data.",
+    "New daily data, pure PyTorch runner, evaluation and server management surround the reused core."
+  ],
+  "release_changes": [
+    "Portable code-only package and synthetic smoke/CI; private data and server setup excluded.",
+    "Default denoising x0 bounds [6,3] exposed as a nonpersistent registered buffer, preserving old state_dict keys.",
+    "Standalone sampling and fidelity CLI; DDPM training with default DDIM20 sampling."
+  ]
+}

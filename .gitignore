@@ -1,0 +1,41 @@
+# Local market data, generated arrays and model checkpoints
+/data/
+/outputs/
+/analysis/
+/deployment/
+/server_backup/
+/_local_checks/
+*.parquet
+*.csv
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.sqlite
+*.db
+*.tar
+*.tar.gz
+*.zip
+*.pdf
+# Credentials and machine-specific settings
+.env
+.env.*
+*.pem
+*.key
+*server_config*
+*known_hosts*
+# Runtime
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+_deps/
+*.log
+*.tmp
+.DS_Store

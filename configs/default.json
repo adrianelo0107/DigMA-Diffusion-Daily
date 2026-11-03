@@ -1,0 +1,74 @@
+{
+  "experiment": "digma_daily60_logvolume_r6_v3",
+  "data": {
+    "source": "data/market.parquet",
+    "processed": "data/processed",
+    "sequence_length": 60,
+    "stride": 20,
+    "train_fraction": 0.7,
+    "validation_fraction": 0.15,
+    "max_abs_log_return": 0.5,
+    "start_date": "2015-01-01",
+    "end_date": "2024-12-31"
+  },
+  "model": {
+    "dim": 64,
+    "dim_mults": [
+      1,
+      4,
+      16
+    ],
+    "channels": 2,
+    "diffusion_steps": 200,
+    "sampling_steps": 20,
+    "cond_drop_prob": 0.5,
+    "x0_clip": [
+      6.0,
+      3.0
+    ]
+  },
+  "training": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "epochs": 10,
+    "batch_size": 256,
+    "learning_rate": 1e-05,
+    "weight_decay": 0.01,
+    "num_workers": 0,
+    "precision": "bf16",
+    "cpu_threads": 6,
+    "validation_samples": 5000,
+    "log_every": 100
+  },
+  "evaluation": {
+    "targets": [
+      "return",
+      "amplitude",
+      "volatility"
+    ],
+    "bin_names": [
+      "Lower",
+      "Low",
+      "Medium",
+      "High",
+      "Higher"
+    ],
+    "n_bins": 5,
+    "guidance_scales": [
+      1,
+      2,
+      4,
+      6,
+      8
+    ],
+    "rescaled_phi": 0.7,
+    "calibration_samples": 200,
+    "test_samples": 200,
+    "sample_batch_size": 64,
+    "figure_seed": 0
+  },
+  "output": "outputs/digma_daily60"
+}

@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Please cite the DigMA paper for the underlying method, and this repository for the daily adaptation."
+title: "DigMA-Diffusion-Daily"
+version: 0.1.0
+date-released: 2026-11-03
+url: "https://github.com/adrianelo0107/DigMA-Diffusion-Daily"
+license: MIT
+authors:
+  - family-names: "adrianelo0107"
+preferred-citation:
+  type: article
+  title: "Controllable Financial Market Generation with Diffusion Guided Meta Agent"
+  year: 2026
+  journal: "Proceedings of the AAAI Conference on Artificial Intelligence"
+  url: "https://arxiv.org/abs/2408.12991"
+  authors:
+    - family-names: Huang
+      given-names: Yu-Hao
+    - family-names: Xu
+      given-names: Chang
+    - family-names: Liu
+      given-names: Yang
+    - family-names: Liu
+      given-names: Weiqing
+    - family-names: Li
+      given-names: Wu-Jun
+    - family-names: Bian
+      given-names: Jiang
