@@ -1,7 +1,7 @@
 torch>=2.2,<3
 numpy>=1.26,<2
 pandas>=2.2,<3
-pyarrow>=15
+pyarrow>=15,<20
 scipy>=1.11
 matplotlib>=3.8
 einops==0.8.1

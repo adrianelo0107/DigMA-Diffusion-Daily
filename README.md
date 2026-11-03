@@ -72,7 +72,7 @@ flowchart LR
 
 ## 快速开始
 
-推荐 Python 3.11。先按硬件安装合适的 [PyTorch](https://pytorch.org/get-started/locally/)，再安装依赖：
+推荐 Python 3.11。依赖范围保留 NumPy 1.26 与 PyArrow 15—19 的兼容组合。先按硬件安装合适的 [PyTorch](https://pytorch.org/get-started/locally/)，再安装依赖：
 
 ```bash
 python -m pip install -r requirements.txt
