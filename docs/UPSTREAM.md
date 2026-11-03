@@ -12,6 +12,7 @@
 | code/generate.py / fidelity.py | 独立本地采样与四指标CLI，避免研究工作区/服务器硬编码 |
 | code/smoke.py | 自动生成合成面板，覆盖训练/采样/评估，不依赖私有行情 |
 | docs/figures/render_showcase.py | 仅用历史汇总统计生成精选图 |
+| docs/figures/render_report_figures.py | 从本地保存样本重绘真实/生成密度、量价路径、五档控制与裁剪对照；不内嵌数据 |
 
 上游原始Git blob记录见third_party/provenance.json；fidelity指标参考函数置于third_party中，作为来源记录，正常运行不导入其全局环境。
 
